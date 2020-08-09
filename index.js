@@ -10,6 +10,7 @@ var canvas = document.getElementById("myCanvas");
 var newGameNote = document.getElementById("newgame-note");
 var buttonStart = document.getElementById("button-start");
 var buttonReplay = document.getElementById("button-replay");
+var welcomePageImage = document.getElementById("home-Page-Background");
 var deathNote = document.getElementById("death-note");
 var deathNoteText = document.getElementById("death-note-text");
 var player1 = document.getElementById("player-1");
@@ -353,3 +354,13 @@ function addMasks() {
   //}
 }
 var addMasksLoop = setInterval(addMasks, 5000);
+
+// update of home landing page // 
+buttonStart.addEventListener("click", (e) => {
+  e.preventDefault();
+  newGameNote.classList.add("display-none");
+  welcomePageImage.classList.add("display-none");
+  startLoops();
+
+});
+});
