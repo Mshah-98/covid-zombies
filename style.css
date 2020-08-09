@@ -27,3 +27,24 @@ body {
 .display-none {
   display: none;
 }
+
+#description {
+  font-style: italic;
+  background-color: white;
+}
+
+#button-start {
+width: 100%;
+height: 90px;
+color: red;
+background-color: blue;
+font-size: 22px;
+font-weight: bold;
+}
+
+#button-start:hover {
+  color:blue;
+  background-color: red;
+  cursor: pointer;
+
+}
